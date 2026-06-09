@@ -315,7 +315,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:48px}
   </div>
   <div class="nav-right">
     <button class="btn-ghost" onclick="openModal('login')">Sign In</button>
-    <button class="btn-blue" onclick="openModal('signup')">Join Now</button>
+    <button class="btn-blue" onclick="window.open('https://airtable.com/appNudDnGhbGLMOE5/shrDx79vszF7xujJM','_blank')">Join Now</button>
   </div>
 </nav>
 
@@ -650,7 +650,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:48px}
         <ul class="footer-links-list">
           <li><a href="#" onclick="showSection('listings',null)">Browse Homes</a></li>
           <li><a href="#" onclick="showSection('host',null)">List Property</a></li>
-          <li><a href="#" onclick="openModal('signup')">Join Now</a></li>
+          <li><a href="#" onclick="window.open('https://airtable.com/appNudDnGhbGLMOE5/shrDx79vszF7xujJM','_blank')">Join Now</a></li>
           <li><a href="#" onclick="showSection('contact',null)">Contact</a></li>
         </ul>
       </div>
@@ -825,7 +825,7 @@ function openModal(type){
     <div style="margin-bottom:20px"><label class="form-label">Password</label><input class="form-input" type="password" placeholder="Your password"/></div>
     <button class="form-submit" onclick="showToast('✓ Signed in successfully');closeModal()">Sign In →</button>
     <p class="form-note" style="margin-top:14px"><a href="#" style="color:var(--blue)">Forgot password?</a></p>
-    <p class="form-note" style="margin-top:8px">Don't have an account? <a href="#" onclick="openModal('signup')" style="color:var(--blue)">Join now</a></p>`;
+    <p class="form-note" style="margin-top:8px">Don't have an account? <a href="#" onclick="window.open('https://airtable.com/appNudDnGhbGLMOE5/shrDx79vszF7xujJM','_blank')" style="color:var(--blue)">Join now</a></p>`;
   } else if(type==='host-signup'){
     html = `<button class="modal-close" onclick="closeModal()">✕</button>
     <div class="modal-title">List Your Property</div>
@@ -890,7 +890,7 @@ function openBookModal(id){
       🔒 Payment is processed securely via Stripe. Your card is not charged until the host accepts your booking request.
     </div>
     <button class="form-submit" onclick="showToast('✓ Booking request sent! The host will respond within 24 hours.');closeModal()">Send Booking Request →</button>
-    <p class="form-note" style="margin-top:10px">You must be a verified ProKribs member to book. <a href="#" onclick="openModal('signup')" style="color:var(--blue)">Sign up free</a></p>`;
+    <p class="form-note" style="margin-top:10px">You must be a verified ProKribs member to book. <a href="#" onclick="window.open('https://airtable.com/appNudDnGhbGLMOE5/shrDx79vszF7xujJM','_blank')" style="color:var(--blue)">Sign up free</a></p>`;
   overlay.classList.add('open');
 }
 
